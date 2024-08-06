@@ -1,0 +1,48 @@
+html body {
+    align-items: center;
+    color: burlywood;
+    background-color: white;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: burlywood;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.toolbar a {
+    color: burlywood;
+}
+
+.wrap-block {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 50px;
+}
+
+.left-block {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.welcome {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 100px;
+}
+
+.welcome h1 {
+    font-size: 100px;
+}
+
+.welcome p {
+    font-size: 20px;
+}

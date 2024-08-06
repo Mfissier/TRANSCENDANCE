@@ -1,0 +1,41 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- <link rel="stylesheet" type="text/css" href="static/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h1>PONG</h1>
+    <div class="form-wrap">
+      <div class="form-group">
+        <form>
+          <h2>CREATE</h2>
+          <label for="create-pseudo">Pseudo</label>
+          <input type="text" class="form-control" id="create-pseudo" placeholder="MasterPong" required>
+          <label for="create-mail">Email address</label>
+          <input type="email" class="form-control" id="create-mail" placeholder="pong@pong.com" required>
+          <label for="create-pass">Password</label>
+          <input type="password" class="form-control" id="create-pass" placeholder="************" required>
+          <button type="submit" formaction="templates/pong.html" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="form-group">
+        <form>
+          <h2>CONNECT</h2>
+          <label for="log-pseudo">Pseudo</label>
+          <input type="text" class="form-control" id="log-pseudo" placeholder="MasterPong" required>
+          <label for="log-pass">Password</label>
+          <input type="password" class="form-control" id="log-pass" placeholder="************" required>
+          <button type="submit" formaction="templates/pong.html" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
